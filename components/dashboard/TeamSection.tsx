@@ -114,7 +114,7 @@ const TeamSection = () => {
                 className="w-16 h-16 rounded-lg object-cover"
               />
               
-              <div className="flex-1"> Continuing with the TeamSection.tsx file exactly where we left off:
+              <div className="flex-1"> 
 
                 <div className="flex justify-between items-start">
                   <div>

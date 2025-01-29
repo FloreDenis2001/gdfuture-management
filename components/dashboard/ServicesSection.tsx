@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Plus, Code, Smartphone, Database, Palette, Pencil, Trash2 } from 'lucide-react';
+import { Plus, Code, Smartphone ,Pencil, Trash2 } from 'lucide-react';
 import Modal from '@/components/ui/Modal';
 import DeleteDialog from '@/components/ui/DeleteDialog';
 
@@ -44,18 +44,13 @@ const ServicesSection = () => {
     duration: ''
   });
 
-  const icons = {
-    Code,
-    Smartphone,
-    Database,
-    Palette
-  };
+
 
   const handleCreateService = () => {
     const service: Service = {
       id: services.length + 1,
       ...newService,
-      icon: Code // Default icon
+      icon: Code 
     };
     setServices([...services, service]);
     setNewService({

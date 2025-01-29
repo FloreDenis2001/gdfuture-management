@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Plus, Code, Smartphone ,Pencil, Trash2 } from 'lucide-react';
+import { Plus, Code, Smartphone ,Pencil, Trash2, LucideIcon } from 'lucide-react';
 import Modal from '@/components/ui/Modal';
 import DeleteDialog from '@/components/ui/DeleteDialog';
 
@@ -8,7 +8,7 @@ interface Service {
   id: number;
   name: string;
   description: string;
-  icon: any;
+  icon: LucideIcon;
   price: string;
   duration: string;
 }

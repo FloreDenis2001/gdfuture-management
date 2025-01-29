@@ -15,9 +15,10 @@ import {
   MessageSquare,
   TrendingUp,
   HelpCircle,
-  Zap,
 } from "lucide-react";
 import DashboardHeader from "./DashboardHeader";
+import logo from "@/public/logo.png";
+import Image from "next/image";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
@@ -84,8 +85,8 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
                   !sidebarOpen && "md:justify-center"
                 }`}
               >
-                <div className="w-10 h-10 bg-yellow-500/10 rounded-lg flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-yellow-500" />
+                <div className="w-10 h-10  rounded-lg flex items-center justify-center">
+                  <Image src={logo} alt="GDFUTURE"/>
                 </div>
                 {sidebarOpen && (
                   <span className="text-lg font-medium text-white">
